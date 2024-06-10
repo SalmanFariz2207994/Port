@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#F1F4F5] font-Poppins">
+    <!-- Navbar Start -->
+    <header class="fixed z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-4 dark:bg-neutral-800">
+      <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+        <div class="flex items-center justify-between">
+          <a class="flex-none text-3xl font-semibold dark:text-white" href="#">My Portfolio</a>
+          <div class="sm:hidden">
+            <button
+              type="button"
+              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10"
+              data-hs-collapse="#navbar-with-collapse"
+              aria-controls="navbar-with-collapse"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                class="hs-collapse-open:hidden flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" x2="21" y1="6" y2="6" />
+                <line x1="3" x2="21" y1="12" y2="12" />
+                <line x1="3" x2="21" y1="18" y2="18" />
+              </svg>
+              <svg
+                class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="navbar-with-collapse" class="hidden transition-all duration-[0.1ms] overflow-hidden basis-full grow sm:block">
+          <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+            <a class="text-xl font-medium text-blue-500" href="#" aria-current="page">Home</a>
+            <a class="text-xl font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#about">About</a>
+            <a class="text-xl font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#work">Work</a>
+            <a class="text-xl font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section STart -->
+    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" class="object-cover object-center w-full h-full" />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+      
+      <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+        <h1 class="text-5xl font-bold leading-tight mb-4">Welcome to My Awesome Portfolio Website</h1>
+        <p class="text-lg text-gray-300 mb-8">Discover amazing features and services that await you.</p>
+        <a href="#" class="bg-blue-400 text-gray-900 hover:bg-blue-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Get Started</a>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Jumbotron Start -->
+    <body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+    style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+
+    <section id="about">
+
+      <div class="pt-32 flex flex-col justify-center align-middle items-center">
+        <h1 class="font-semibold text-6xl leading-3">
+          About Me
+        </h1>
+      </div>
+
+      <div class="max-w-7xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-3 lg:my-0">
+        
+
+        <!--Main Col-->
+        <div id="profile"
+            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
+
+
+            <div class="p-4 md:p-12 text-center lg:text-left">
+                <!-- Image for mobile view-->
+                <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                    style="background-image: url(/assets/maman.jpeg)"></div>
+
+                <h1 class="text-3xl font-bold pt-8 lg:pt-0">Salman Fariz</h1>
+                <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-500 opacity-25"></div>
+                <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start">
+                    <svg class="h-4 fill-current text-blue-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+                    </svg> What you do
+                </p>
+                <p class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+                    <svg class="h-4 fill-current text-blue-700 pr-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20">
+                        <path
+                            d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z" />
+                    </svg> Alamat isi sendiri
+                </p>
+                <p class="pt-8 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero similique voluptas magni natus. Facilis ab quia dicta esse quaerat, vitae, illo eveniet necessitatibus quo nobis quidem culpa maiores eos magni, non ex voluptas velit officiis tempora veniam. Cum obcaecati asperiores voluptates pariatur consectetur accusamus iure consequatur architecto ex tempore!</p>
+
+                <div class="pt-12 pb-8">
+                    <button class="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full">
+				         Read More
+				     </button>
+                </div>
+
+                <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+                    <a class="link" href="#" data-tippy-content="@facebook_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Facebook</title>
+                            <path
+                                d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+                        </svg>
+                    </a>
+                    <a class="link" href="#" data-tippy-content="@twitter_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Twitter</title>
+                            <path
+                                d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                        </svg>
+                    </a>
+                    <a class="link" href="#" data-tippy-content="@github_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                    <a class="link" href="#" data-tippy-content="@unsplash_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Unsplash</title>
+                            <path d="M7.5 6.75V0h9v6.75h-9zm9 3.75H24V24H0V10.5h7.5v6.75h9V10.5z" />
+                        </svg>
+                    </a>
+                    <a class="link" href="#" data-tippy-content="@dribble_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Dribbble</title>
+                            <path
+                                d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+                        </svg>
+                    </a>
+                    <a class="link" href="#" data-tippy-content="@instagram_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+                    <a class="link" href="#" data-tippy-content="@youtube_handle">
+                        <svg class="h-6 fill-current text-gray-600 hover:text-blue-700" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>YouTube</title>
+                            <path
+                                d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Img Col-->
+        <div class="w-full lg:w-2/5">
+         
+            <img src="/assets/maman.jpeg " class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+
+        </div>
+        
+
+
+        <!-- Pin to top right corner -->
+    
+
+    </div>
+    </section>
+
+
+    <!-- Jumbotron End -->
+
+    <!-- Our Work Start -->
+     <section id="work">
+      <div class="mt-36 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+
+        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+          
+            <h2
+                class="max-w-lg mb-6 mt-36 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                <span class="relative inline-block">
+    
+                    <svg viewBox="0 0 52 24" fill="currentColor"
+                        class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-slate-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                        <defs>
+                            <pattern id="fdca20a0-aeb4-4caf-ba1b-4351eee42363" x="0" y="0" width=".135"
+                                height=".30">
+                                <circle cx="1" cy="1" r=".7"></circle>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#fdca20a0-aeb4-4caf-ba1b-4351eee42363)" width="52" height="24"></rect>
+                    </svg>
+    
+                    <span class="relative text-6xl">My Work</span>
+                </span>
+            </h2>
+            <p class="text-base text-gray-700 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque rem aperiam, eaque ipsa quae.
+            </p>
+        </div>
+    
+    
+        <div class="grid max-w-md gap-8 row-gap-10 sm:mx-auto lg:max-w-full lg:grid-cols-3">
+            <div class="flex flex-col sm:flex-row">
+                <div class="sm:mr-4">
+                    <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
+                        <svg class="w-12 h-12 text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="mb-2 font-semibold leading-5">Website Development:</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        Our website development service offers end-to-end solutions for creating and launching professional
+                        and visually appealing websites.
+                    </p>
+                    <ul class="mb-4 -ml-1 space-y-2">
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Computers
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Health
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                        points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Reference
+                        </li>
+                    </ul>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">Learn
+                        more
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row">
+                <div class="sm:mr-4">
+                    <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
+                        <svg class="w-12 h-12 text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="mb-2 font-semibold leading-5">Social Media Marketing:</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        Our social media marketing service helps businesses establish a
+                        strong online presence and engage with their target audience effectively.
+                    </p>
+                    <ul class="mb-4 -ml-1 space-y-2">
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                        fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Computers
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                        fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Health
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                        fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Reference
+                        </li>
+                    </ul>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">Learn
+                        more
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row">
+                <div class="sm:mr-4">
+                    <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-green-50">
+                        <svg class="w-12 h-12 text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="mb-2 font-semibold leading-5">Content Writing and Copywriting:</h6>
+                    <p class="mb-3 text-sm text-gray-900">
+                        Our content writing and copywriting service offers high-quality and engaging content that captivates your audience and drives conversions.
+                    </p>
+                    <ul class="mb-4 -ml-1 space-y-2">
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                        fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Computers
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                        fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Health
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-1">
+                                <svg class="w-5 h-5 mt-px text-green-400" stroke="currentColor" viewBox="0 0 52 52">
+                                    <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+                                        fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                                </svg>
+                            </span>
+                            Reference
+                        </li>
+                    </ul>
+                    <a href="/" aria-label=""
+                        class="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-green-800">Learn
+                        more
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+     </section>
+     <!-- Our Work End -->
+      <!-- Contact Section Start -->
+       <section id="contact">
+        <div id="contact-us" class=" mt-28 overflow-hidden py-16 px-4 dark:bg-slate-900 sm:px-6 lg:px-8 lg:py-24">
+          <div class="relative mx-auto max-w-xl">
+              <svg class="absolute left-full translate-x-1/2 transform" width="404" height="404" fill="none"
+                  viewBox="0 0 404 404" aria-hidden="true">
+                  <defs>
+                      <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+                          patternUnits="userSpaceOnUse">
+                          <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-slate-600"
+                              fill="currentColor"></rect>
+                      </pattern>
+                  </defs>
+                  <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"></rect>
+              </svg>
+              <svg class="absolute right-full bottom-0 -translate-x-1/2 transform" width="404" height="404" fill="none"
+                  viewBox="0 0 404 404" aria-hidden="true">
+                  <defs>
+                      <pattern id="85737c0e-0916-41d7-917f-596dc7edfa27" x="0" y="0" width="20" height="20"
+                          patternUnits="userSpaceOnUse">
+                          <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-slate-800"
+                              fill="currentColor"></rect>
+                      </pattern>
+                  </defs>
+                  <rect width="404" height="404" fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"></rect>
+              </svg>
+              <div class="text-center mt-40">
+                  <h2 class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-slate-200 sm:text-6xl">Contact Us
+                  </h2>
+                  <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-slate-400">Please use the form below to contact us.
+                      Thank you!
+                  </p>
+              </div>
+              <div class="mt-12">
+                  <form class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                      <div class="sm:col-span-2">
+                          <label for="name" class="block text-sm font-medium text-gray-700 dark:text-slate-400">Name</label>
+                          <div class="mt-1">
+                              <input name="name" type="text" id="name" autocomplete="organization" required="" class="border border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white">
+                          </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                          <label for="email" class="block text-sm font-medium text-gray-700 dark:text-slate-400">Email</label>
+                          <div class="mt-1">
+                              <input name="email" id="email" required="" type="email" autocomplete="email" class="border border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white">
+                          </div>
+                      </div>
+                      <div class="sm:col-span-2">
+                          <label for="message" class="block text-sm font-medium text-gray-700 dark:text-slate-400">Message</label>
+                          <div class="mt-1">
+                              <textarea required="" name="message" id="message" rows="4" class="border border-gray-300 block w-full rounded-md py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 dark:border-white/5 dark:bg-slate-700/50 dark:text-white"></textarea>
+                          </div>
+                      </div>
+                      <div class="flex justify-end sm:col-span-2">
+                          <button type="submit" class="inline-flex items-center rounded-md px-4 py-2 font-medium focus:outline-none focus-visible:ring focus-visible:ring-sky-500 shadow-sm sm:text-sm transition-colors duration-75 text-sky-500 border border-sky-500 hover:bg-sky-50 active:bg-sky-100 disabled:bg-sky-100 dark:hover:bg-gray-900 dark:active:bg-gray-800 dark:disabled:bg-gray-800 disabled:cursor-not-allowed">
+                              <span>Send Message</span>
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+       </section>
+      <!-- Contact Section End -->
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+  
+  </body>
+</html>
